@@ -4,14 +4,13 @@
   justify-content: center;
   padding: 30px 20px;
 
-  /* Gradient background */
-  background: linear-gradient(135deg, #ff9ecf, #ffc3e6, #ffe6f4);
+  background-color: #A0522D;  /* Cinnamon tone */
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  height: 120px;   /* Bigger logo */
+  height: 120px;
   width: auto;
   margin-right: 20px;
 }
@@ -19,7 +18,7 @@
 .title {
   font-size: 3rem;
   font-weight: 700;
-  color: white;
+  color: #FFF8E7;   /* Soft cream (high contrast & bakery vibe) */
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
