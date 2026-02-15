@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Waltograph";
+  src: url("../assets/fonts/waltograph.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -17,14 +24,12 @@
 .title {
   margin: 0;
   line-height: 1;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #FFF8E7; /* cream */
-  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-family: "Waltograph", cursive;
+  color: #FFF8E7;
   letter-spacing: 1px;
-}
-
-/* ✅ Mobile: stack logo above text and shrink a bit */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}/* ✅ Mobile: stack logo above text and shrink a bit */
 @media (max-width: 600px) {
   .header {
     flex-direction: column;
