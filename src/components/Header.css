@@ -1,11 +1,9 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: center;       /* vertical centering */
   justify-content: center;
   padding: 30px 20px;
-
-  background-color: #A0522D;  /* Cinnamon tone */
-
+  background-color: #A0522D;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -13,12 +11,16 @@
   height: 120px;
   width: auto;
   margin-right: 20px;
+  display: block;            /* removes inline spacing issues */
 }
 
 .title {
   font-size: 3rem;
   font-weight: 700;
-  color: #FFF8E7;   /* Soft cream (high contrast & bakery vibe) */
+  color: #FFF8E7;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
+
+  margin: 0;                 /* remove default h1 margin */
+  line-height: 1;            /* prevents vertical shift */
 }
