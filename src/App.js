@@ -9,18 +9,22 @@ function App() {
 
       <main className="main">
         <div className="videoSection">
-          <video
-            className="centerVideo"
-            src={heroVideo}
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
+
+          <div className="videoWrapper">
+            <video
+              className="centerVideo"
+              src={heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+          </div>
 
           <p className="tagline">
             Organic designer cinnamon rolls. The best bunz in town!
           </p>
+
         </div>
       </main>
     </div>
