@@ -1,26 +1,45 @@
 .header {
   display: flex;
-  align-items: center;       /* vertical centering */
+  align-items: center;
   justify-content: center;
-  padding: 30px 20px;
-  background-color: #A0522D;
+  gap: 16px;
+  padding: 18px 16px;
+  background-color: #A0522D; /* cinnamon */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  height: 120px;
+  height: 90px;
   width: auto;
-  margin-right: 20px;
-  display: block;            /* removes inline spacing issues */
+  display: block;
 }
 
 .title {
-  font-size: 3rem;
+  margin: 0;
+  line-height: 1;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #FFF8E7;
+  color: #FFF8E7; /* cream */
   font-family: "Poppins", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
 
-  margin: 0;                 /* remove default h1 margin */
-  line-height: 1;            /* prevents vertical shift */
+/* ✅ Mobile: stack logo above text and shrink a bit */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 14px 12px;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    height: 72px;
+    margin: 0; /* remove any leftover spacing */
+  }
+
+  .title {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
 }
