@@ -8,15 +8,20 @@ function App() {
       <Header />
 
       <main className="main">
-        <video
-          className="centerVideo"
-          src={heroVideo}
-          autoPlay
-          loop
-          muted
-          playsInline
-          controls={false}
-        />
+        <div className="videoSection">
+          <video
+            className="centerVideo"
+            src={heroVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+
+          <p className="tagline">
+            Organic designer cinnamon rolls. The best bunz in town!
+          </p>
+        </div>
       </main>
     </div>
   );
