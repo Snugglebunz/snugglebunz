@@ -5,8 +5,10 @@ import logo from "../assets/logo.png";
 function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Snugglebunz Logo" className="logo" />
-      <h1 className="title">Snugglebunz</h1>
+        <img src={logo} alt="Snugglebunz Logo" className="logo" />
+        <h1 className="title">
+            <span className="bigS">S</span>nugglebunz
+        </h1>    
     </header>
   );
 }
