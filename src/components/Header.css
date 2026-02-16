@@ -11,11 +11,14 @@
 }
 
 /* ===== LOGO ===== */
+/* ===== LOGO CIRCLE FRAME ===== */
 .logo {
-  height: 100%;        /* match header height */
-  max-height: 80px;    /* prevents it from getting too huge */
-  width: auto;
-  object-fit: contain;
+  width: 80px;          /* controls circle size */
+  height: 80px;         /* must match width */
+  border-radius: 50%;   /* makes it circular */
+  object-fit: cover;    /* crops image nicely inside circle */
+  border: 3px solid #FFF8E7;  /* optional cream border */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
 /* ===== TITLE WRAPPER ===== */
@@ -49,10 +52,10 @@
     padding: 14px;
   }
 
-  .logo {
-    max-height: 70px;   /* scales proportionally */
+.logo {
+    width: 65px;
+    height: 65px;
   }
-
   .restText {
     font-size: 1.8rem;
   }
