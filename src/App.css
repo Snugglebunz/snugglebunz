@@ -18,7 +18,7 @@
 /* ===== VIDEO WRAPPER ===== */
 .videoWrapper {
   width: min(900px, 92vw);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   border-radius: 18px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
