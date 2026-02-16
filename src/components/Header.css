@@ -1,64 +1,64 @@
-@font-face {
-  font-family: "Waltograph";
-  src: url("../assets/fonts/waltograph.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-.bigS {
-  font-size: 4.8rem;
-  display: inline-block;
-  line-height: 1;
-  vertical-align: middle;
-  margin-right: 4px;
-
-  color: #FFF8E7;
-  text-shadow:
-    2px 2px 4px rgba(0,0,0,0.4),
-    0 0 8px rgba(255, 248, 231, 0.6);
-}
+/* ===== HEADER CONTAINER ===== */
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  padding: 18px 16px;
-  background-color: #A0522D; /* cinnamon */
+  gap: 20px;
+
+  padding: 20px 16px;
+  background: linear-gradient(135deg, #8B4513, #B5651D); /* cinnamon gradient */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== LOGO IMAGE ===== */
 .logo {
   height: 90px;
   width: auto;
   display: block;
 }
 
+/* ===== TITLE WRAPPER ===== */
 .title {
+  display: flex;
+  align-items: center;
   margin: 0;
   line-height: 1;
-  font-size: 2.5rem;
-  font-family: "Waltograph", cursive;
   color: #FFF8E7;
+}
+
+/* ===== BIG SVG S ===== */
+.bigSLogo {
+  height: 95px;   /* adjust if needed */
+  width: auto;
+  display: block;
+  margin-right: 6px;
+}
+
+/* ===== REST OF TEXT ===== */
+.restText {
+  font-size: 2.2rem;
+  font-family: "Waltograph", cursive; /* optional */
   letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}/* ✅ Mobile: stack logo above text and shrink a bit */
+  color: #FFF8E7;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 600px) {
   .header {
     flex-direction: column;
-    padding: 14px 12px;
-    gap: 10px;
     text-align: center;
+    gap: 12px;
   }
 
   .logo {
-    height: 72px;
-    margin: 0; /* remove any leftover spacing */
+    height: 70px;
   }
 
-  .title {
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
+  .bigSLogo {
+    height: 75px;
   }
-    .bigS {
-        font-size: 3.2rem;
-    }
+
+  .restText {
+    font-size: 1.8rem;
+  }
 }
