@@ -1,4 +1,4 @@
-/* ===== HEADER CONTAINER ===== */
+/* ===== HEADER ===== */
 .header {
   display: flex;
   align-items: center;
@@ -8,38 +8,41 @@
   padding: 16px 20px;
   background: linear-gradient(135deg, #8B4513, #B5651D);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  position: relative;
 }
 
 /* ===== LOGO ===== */
-/* ===== LOGO CIRCLE FRAME ===== */
 .logo {
-  width: 80px;          /* controls circle size */
-  height: 80px;         /* must match width */
-  border-radius: 50%;   /* makes it circular */
-  object-fit: cover;    /* crops image nicely inside circle */
-  border: 3px solid #FFF8E7;  /* optional cream border */
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  width: 120px;      /* MUCH larger */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px solid #FFF8E7;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+
+  transition: transform 0.2s ease;
 }
 
-/* ===== TITLE WRAPPER ===== */
+/* ===== TITLE ===== */
 .title {
   display: flex;
   align-items: center;
   margin: 0;
   line-height: 1;
   color: #FFF8E7;
+  position: relative;
 }
 
-/* ===== BIG SVG S ===== */
+/* Big SVG S */
 .bigSLogo {
-  height: 1.6em;  /* scales relative to text */
-  width: auto;
+  height: 1.8em;
   margin-right: 6px;
 }
 
-/* ===== REST OF TEXT ===== */
 .restText {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-family: "Waltograph", cursive;
   letter-spacing: 1px;
 }
@@ -49,18 +52,26 @@
   .header {
     flex-direction: column;
     text-align: center;
-    padding: 14px;
+    padding: 12px;
+    gap: 0;
   }
 
-.logo {
-    width: 65px;
-    height: 65px;
+  .logo {
+    width: 160px;    /* VERY large on mobile */
+    height: 160px;
+    margin-bottom: -25px; /* pulls text upward */
+    z-index: 2;
   }
+
+  .title {
+    z-index: 1;
+  }
+
   .restText {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .bigSLogo {
-    height: 1.4em;
+    height: 1.6em;
   }
 }
