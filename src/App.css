@@ -41,6 +41,60 @@
   line-height: 1.6;
 }
 
+/* ===== ORDER BUTTON SECTION ===== */
+.orderButtons {
+  margin-top: 25px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== BASE BUTTON STYLE ===== */
+.orderBtn {
+  padding: 16px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 14px;
+  color: white;
+  min-width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animation */
+.orderBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* Brand colors */
+.uber {
+  background-color: #000000;
+}
+
+.grubhub {
+  background-color: #F63440;
+}
+
+.doordash {
+  background-color: #EB1700;
+}
+
+/* Mobile stacking */
+@media (max-width: 600px) {
+  .orderButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orderBtn {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
 /* ✅ Extra small screens */
 @media (max-width: 420px) {
   .videoWrapper {
