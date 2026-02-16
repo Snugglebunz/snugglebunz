@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Waltograph";
+  src: url("./assets/fonts/waltograph.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* ===== MAIN LAYOUT ===== */
 .main {
   min-height: calc(100vh - 180px);
@@ -34,11 +41,12 @@
 
 /* ===== TAGLINE ===== */
 .tagline {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #444;
-  max-width: 600px;
-  line-height: 1.6;
+  margin-top: 24px;
+  font-size: 2rem;              /* Larger */
+  font-family: "Waltograph", cursive;
+  color: #8B4513;               /* Cinnamon color */
+  max-width: 700px;
+  line-height: 1.4;
 }
 
 /* ===== ORDER BUTTON SECTION ===== */
@@ -84,7 +92,8 @@
   }
 
   .tagline {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
   }
 
   .orderButtons {
