@@ -17,31 +17,26 @@
   display: block;
 }
 
-/* ===== TITLE WRAPPER ===== */
 .title {
   display: flex;
   align-items: center;
   margin: 0;
   line-height: 1;
-  color: #FFF8E7;
+  color: #FFF8E7; /* controls SVG + text */
 }
 
-/* ===== BIG SVG S ===== */
 .bigSLogo {
-  height: 95px;   /* adjust if needed */
+  height: 95px;
   width: auto;
-  display: block;
   margin-right: 6px;
+  display: block;
 }
 
-/* ===== REST OF TEXT ===== */
 .restText {
   font-size: 2.2rem;
-  font-family: "Waltograph", cursive; /* optional */
+  font-family: "Waltograph", cursive;
   letter-spacing: 1px;
-  color: #FFF8E7;
 }
-
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 600px) {
   .header {

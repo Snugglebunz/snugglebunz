@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import logo from "../assets/logo.png";
-import BigS from "../assets/S.svg";
+import { ReactComponent as BigS } from "../assets/S.svg";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
       <img src={logo} alt="Snugglebunz Logo" className="logo" />
 
       <h1 className="title">
-        <img src={BigS} alt="S" className="bigSLogo" />
+        <BigS className="bigSLogo" aria-label="S" />
         <span className="restText">nugglebunz</span>
       </h1>
     </header>
