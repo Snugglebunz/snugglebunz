@@ -1,9 +1,10 @@
+/* ===== MAIN LAYOUT ===== */
 .main {
   min-height: calc(100vh - 180px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 20px;
 }
 
 .videoSection {
@@ -14,16 +15,15 @@
   text-align: center;
 }
 
-/* ✅ Responsive wrapper */
+/* ===== VIDEO WRAPPER ===== */
 .videoWrapper {
-  width: min(900px, 92vw);   /* never wider than 900px, but shrinks on mobile */
-  aspect-ratio: 16 / 9;      /* keeps a nice video shape on all screens */
+  width: min(900px, 92vw);
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 18px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* ✅ Video fills wrapper and crops nicely */
 .centerVideo {
   width: 100%;
   height: 100%;
@@ -32,58 +32,54 @@
   display: block;
 }
 
-/* ✅ Tagline stays readable on mobile */
+/* ===== TAGLINE ===== */
 .tagline {
-  margin-top: 16px;
-  font-size: 1.1rem;
+  margin-top: 20px;
+  font-size: 1.2rem;
   color: #444;
-  max-width: min(600px, 92vw);
+  max-width: 600px;
   line-height: 1.6;
 }
 
 /* ===== ORDER BUTTON SECTION ===== */
 .orderButtons {
-  margin-top: 25px;
+  margin-top: 30px;
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* ===== BASE BUTTON STYLE ===== */
+/* ===== CINNAMON BUTTON STYLE ===== */
 .orderBtn {
   padding: 16px 30px;
   font-size: 1.1rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 14px;
-  color: white;
+
+  color: #FFF8E7;
+  background: linear-gradient(135deg, #8B4513, #B5651D);
+
   min-width: 220px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-/* Hover animation */
+/* Hover effect */
 .orderBtn:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
 }
 
-/* Brand colors */
-.uber {
-  background-color: #000000;
-}
-
-.grubhub {
-  background-color: #F63440;
-}
-
-.doordash {
-  background-color: #EB1700;
-}
-
-/* Mobile stacking */
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 600px) {
+  .videoWrapper {
+    width: 96vw;
+  }
+
   .orderButtons {
     flex-direction: column;
     align-items: center;
@@ -93,15 +89,8 @@
     width: 90%;
     max-width: 320px;
   }
-}
 
-/* ✅ Extra small screens */
-@media (max-width: 420px) {
-  .videoWrapper {
-    width: 96vw;
-    border-radius: 14px;
-  }
   .tagline {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 }
