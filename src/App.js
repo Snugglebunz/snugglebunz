@@ -54,6 +54,15 @@ function App() {
               Order on DoorDash
             </a>
 
+            <a
+              href="https://www.seamless.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="orderBtn"
+            >
+              Order on Seamless
+            </a>
+
           </div>
 
         </div>
