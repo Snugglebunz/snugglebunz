@@ -51,29 +51,61 @@
 }
 
 /* ===== CINNAMON BUTTON STYLE ===== */
+/* ===== CINNAMON ROLL BUTTON STYLE ===== */
 .orderBtn {
-  padding: 16px 30px;
+  position: relative;
+  padding: 22px 36px;
   font-size: 1.1rem;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 14px;
+  color: #5A2E0C;
 
-  color: #FFF8E7;
-  background: linear-gradient(135deg, #8B4513, #B5651D);
+  border-radius: 50%; /* makes it round */
+  width: 180px;
+  height: 180px;
 
-  min-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  background:
+    radial-gradient(circle at 40% 40%, #F5D7B2 0%, #E6B980 30%, #B5651D 60%, #8B4513 100%);
+
+  box-shadow:
+    inset -8px -8px 20px rgba(0,0,0,0.2),
+    inset 6px 6px 15px rgba(255,255,255,0.4),
+    0 10px 25px rgba(0,0,0,0.25);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover effect */
+/* swirl overlay */
+.orderBtn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      #B5651D 0deg,
+      #E6B980 90deg,
+      #8B4513 180deg,
+      #F5D7B2 270deg,
+      #B5651D 360deg
+    );
+  opacity: 0.25;
+}
+
+/* hover animation */
 .orderBtn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
-  filter: brightness(1.1);
+  transform: scale(1.05);
+  box-shadow:
+    inset -6px -6px 15px rgba(0,0,0,0.25),
+    inset 6px 6px 15px rgba(255,255,255,0.4),
+    0 15px 30px rgba(0,0,0,0.35);
 }
-
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 600px) {
   .videoWrapper {
