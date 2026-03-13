@@ -21,21 +21,25 @@ function App() {
             />
           </div>
 
-          <p className="tagline">
-            Organic designer cinnamon rolls. The best bunz in town!
-          </p>
+          <div className="textPanel">
 
-          <p className="emailLabel">
-            Email:
-          </p>
+            <p className="tagline">
+              Organic designer cinnamon rolls. The best bunz in town!
+            </p>
 
-          <p className="email">
-            originalsnugglebunz@gmail.com
-          </p>
+            <p className="emailLabel">
+              Email:
+            </p>
 
-          <p className="tagline">
-            Better than Cinnabon
-          </p>
+            <p className="email">
+              originalsnugglebunz@gmail.com
+            </p>
+
+            <p className="tagline">
+              Better than Cinnabon
+            </p>
+
+          </div>
 
           <div className="orderButtons">
 
