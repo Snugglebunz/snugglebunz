@@ -39,14 +39,22 @@
   display: block;
 }
 
-/* ===== TAGLINE + EMAIL ===== */
-.tagline,
-.email {
+/* ===== TAGLINE ===== */
+.tagline {
   margin-top: 24px;
   font-size: 2rem;
   font-family: "Waltograph", cursive;
   color: #8B4513;
   max-width: 700px;
+  line-height: 1.4;
+}
+
+/* ===== EMAIL (smaller so it fits mobile) ===== */
+.email {
+  margin-top: 12px;
+  font-size: 1.3rem;
+  font-family: "Waltograph", cursive;
+  color: #8B4513;
   line-height: 1.4;
 }
 
@@ -83,7 +91,6 @@
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 600px) {
-
   .main {
     padding: 16px;
   }
@@ -92,10 +99,13 @@
     width: 96vw;
   }
 
-  .tagline,
-  .email {
+  .tagline {
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+  }
+
+  .email {
+    font-size: 1.1rem;
   }
 
   .orderButtons {
@@ -107,5 +117,4 @@
     width: 90%;
     max-width: 300px;
   }
-
 }
