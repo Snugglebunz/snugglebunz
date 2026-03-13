@@ -26,7 +26,7 @@ function App() {
           </p>
 
           <p className="emailLabel">
-            Email
+            Email:
           </p>
 
           <p className="email">
