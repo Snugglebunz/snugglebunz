@@ -30,7 +30,7 @@ function App() {
           </p>
 
           <p className="tagline">
-            Better than Cinnabon
+            "Better than Cinnabon"
           </p>
 
           <div className="orderButtons">
