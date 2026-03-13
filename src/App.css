@@ -25,7 +25,7 @@
 /* ===== VIDEO WRAPPER ===== */
 .videoWrapper {
   width: min(900px, 92vw);
-  aspect-ratio: 4 / 3;   /* Taller */
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 18px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
@@ -39,12 +39,13 @@
   display: block;
 }
 
-/* ===== TAGLINE ===== */
-.tagline {
+/* ===== TAGLINE + EMAIL ===== */
+.tagline,
+.email {
   margin-top: 24px;
-  font-size: 2rem;              /* Larger */
+  font-size: 2rem;
   font-family: "Waltograph", cursive;
-  color: #8B4513;               /* Cinnamon color */
+  color: #8B4513;
   max-width: 700px;
   line-height: 1.4;
 }
@@ -75,7 +76,6 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover effect */
 .orderBtn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
@@ -83,6 +83,7 @@
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 600px) {
+
   .main {
     padding: 16px;
   }
@@ -91,7 +92,8 @@
     width: 96vw;
   }
 
-  .tagline {
+  .tagline,
+  .email {
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
   }
@@ -105,4 +107,5 @@
     width: 90%;
     max-width: 300px;
   }
+
 }

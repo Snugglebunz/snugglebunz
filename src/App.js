@@ -25,6 +25,10 @@ function App() {
             Organic designer cinnamon rolls. The best bunz in town!
           </p>
 
+          <p className="email">
+            E-mail: originalsnugglebunz@gmail.com
+          </p>
+
           <div className="orderButtons">
 
             <a
