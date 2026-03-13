@@ -43,7 +43,7 @@
 .textPanel {
   margin-top: 28px;
   padding: 30px 35px;
-  background: #fff6e9;   /* soft bakery cream */
+  background: #fff6e9;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
   max-width: 720px;
@@ -60,7 +60,7 @@
 
 /* ===== EMAIL LABEL ===== */
 .emailLabel {
-  margin-top: 20px;
+  margin-top: 18px;   /* MATCHED spacing */
   font-size: 1.6rem;
   font-family: "Waltograph", cursive;
   color: #8B4513;
