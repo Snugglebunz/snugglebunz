@@ -29,6 +29,10 @@ function App() {
             E-mail: originalsnugglebunz@gmail.com
           </p>
 
+          <p className="tagline">
+            Better than Cinnabon
+          </p>
+
           <div className="orderButtons">
 
             <a
